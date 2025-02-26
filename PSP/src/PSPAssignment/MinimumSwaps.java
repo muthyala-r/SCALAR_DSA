@@ -7,7 +7,18 @@ import java.util.List;
 
 public class MinimumSwaps {
 
-    public int solve(ArrayList<Integer> A, int B) {
+    public static void main(String[] args) {
+       /* A = [5, 17, 100, 11]
+        B = 20*/
+
+        List<Integer> list = List.of(1, 12, 10, 3, 14, 10, 5);
+        int b =8;
+        int bad = solve(list, b);
+        System.out.println(bad);
+
+    }
+
+    public static int solve(List<Integer> A, int B) {
 
         int n = A.size();
         int count = 0;
@@ -85,12 +96,12 @@ public class MinimumSwaps {
         return swaps;
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(4, 3, 1, 2));
         int result = minimumSwaps(arr);
         System.out.println("Minimum swaps required: " + result);  // Output: 3
     }
-
+*/
     // Helper class for key-value pairs
     static class Pair<K, V> {
         private K key;
